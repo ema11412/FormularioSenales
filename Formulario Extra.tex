@@ -1,0 +1,33 @@
+\documentclass[11pt,oneside]{book}
+%
+\input{codigofuente/preambulo}
+%
+\makeatletter
+\let\ps@plain\ps@empty
+\makeatother
+%
+\pagestyle{fancy}
+\fancyfoot{}
+\fancyhead{}
+\fancyhead[C]{\scriptsize \leftmark}
+\fancyfoot[C]{\scriptsize \rightmark}
+\fancyhead[R]{\thepage}
+
+\fancyfoot[R]{Emanuel Esquivel L}
+\renewcommand{\headrulewidth}{0.8pt}
+\renewcommand{\footrulewidth}{0.5pt}
+\begin{document}
+\frontmatter
+
+
+\mainmatter 
+\include{codigofuente/portada}
+
+\include{codigofuente/mapeos}
+\include{codigofuente/trigonometria}
+\include{codigofuente/expylog}
+\include{codigofuente/hiperbolicas}
+\include{codigofuente/ecuaciones}
+\include{codigofuente/integrales}
+
+\end{document}

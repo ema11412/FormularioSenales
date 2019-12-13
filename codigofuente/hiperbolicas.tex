@@ -1,0 +1,259 @@
+\chapter*{Funciones hiperbólicas}
+
+
+
+\begin{minipage}[t]{0.5\textwidth}
+
+\section*{Definición de las funciones}
+
+\begin{align*}
+& \senh x = \frac{e^x-e^{-x}}{2}\\
+& \cosh x = \frac{e^x+e^{-x}}{2}\\
+& \tanh x = \frac{e^x-e^{-x}}{e^x+e^{-x}}\\
+& \coth x = \frac{e^x+e^{-x}}{e^x-e^{-x}}\\
+& \sech x = \frac{2}{e^x+e^{-x}}\\
+& \csch x = \frac{2}{e^x-e^{-x}}
+\end{align*}
+
+\end{minipage}  \begin{minipage}[t]{0.5\textwidth}
+\section*{Relaciones entre funciones}
+\begin{align*}
+& \tanh x = \frac{\senh x}{\cosh x} \\[5pt]
+& \coth x = \frac{\cosh x}{\senh x} \\[5pt]
+& \sech x = \frac{1}{\cosh x}  \\[5pt]
+& \csch x = \frac{1}{\senh x} \\[5pt]
+& \cosh^2 x - \senh^2 x = 1 \\[5pt]
+& \sech ^2 x + \tanh^2 x = 1 \\[5pt]
+& \coth ^2 x - \csch ^2 x = 1 
+\end{align*}
+\end{minipage} 
+
+\section*{Funciones de ángulos negativos}
+
+\begin{minipage}[c]{0.3\textwidth}
+$$ \senh (-x)=-\senh x$$
+
+$$ \csch (-x)=-\csch x$$
+\end{minipage}  \begin{minipage}[c]{0.3\textwidth}
+$$\cosh (-x)=\cosh x$$
+
+$$\sech (-x)=\sech x$$
+
+\end{minipage}  \begin{minipage}[c]{0.3\textwidth}
+$$\tanh (-x)=-\tanh x$$
+
+$$\coth (-x)=-\coth x$$
+
+\end{minipage}
+
+\section*{Formulas de adicion}
+\begin{minipage}[c]{0.5\textwidth}
+\begin{align*}
+\senh (x \pm y) &= \senh x \cosh y \pm \cosh x \senh y\\\\
+\cosh (x \pm y) &= \cosh x \cosh y \pm \senh x \senh y
+\end{align*}
+
+\end{minipage} 
+\begin{minipage}[c]{0.5\textwidth}
+\begin{align*}
+\tanh (x \pm y) &= \frac{\tanh x \pm \tanh y}{1 \pm \tanh x \tan y}\\\\
+\coth (x \pm y) &= \frac{\coth x \coth y \pm 1}{\coth x \pm \coth y}
+\end{align*}
+\end{minipage}
+
+\section*{Formulas del ángulo doble}
+\begin{align*}
+	\senh 2x &= 2\senh x \cosh x \\[5pt]
+	\cosh 2x &= \cosh^2 x +\senh^2 x = 1+2\senh^2 x = 2\cosh^2 x - 1 \\
+	\tanh 2x &= \frac{2\tanh x}{1+\tanh^2 x}
+\end{align*}
+
+\section*{Formulas de medio ángulo}
+
+\begin{align*}
+	\senh \frac{A}{2} &= \pm\sqrt{\frac{\cosh x -1}{2}}\\
+	\cosh \frac{A}{2} &= \sqrt{\frac{\cosh x +1}{2}}\\
+	\tanh \frac{A}{2} &= \pm\sqrt{\frac{\cosh x -1}{\cosh x+1}}\\
+					  &= \frac{\senh x}{\cosh x +1} = \frac{\cosh x -1}{\senh x}
+\end{align*}
+\begin{center}
+($+$ si $x>0$, $-$ si $x<0$)
+\end{center}
+
+\section*{Formulas de ángulos múltiplos}
+
+\begin{align*}
+	\senh 3x &= 3\senh x + 4\senh^3 x \\[5pt]
+	\cosh 3x &= 4\cosh^3 x - 3\cosh x \\
+	\tanh 3x &= \frac{3\tanh x+\tanh^3 x}{1+3\tanh^2 x}\\
+	\senh 4x &= 4\senh x \cosh^3 x + 4 \senh^3 x \cosh x \\[5pt]
+	\cosh 4x &= 8\cosh^4 x - 8\cosh^2 x + 1 \\
+	\tanh 4x &= \frac{4\tanh x + 4\tanh^3 x}{1+6\tanh^2 x + \tanh^4 x}\\
+\end{align*}
+
+\section*{Potencias de funciones trigonométricas}
+
+\begin{minipage}[c]{0.33\textwidth}
+\begin{align*}
+\senh^2 x &= \frac{1}{2} \cosh 2x -\frac{1}{2}\\\\
+\cosh^2 x &= \frac{1}{2}+ \frac{1}{2} \cosh 2x
+\end{align*}
+
+\end{minipage} 
+\begin{minipage}[c]{0.33\textwidth}
+\begin{align*}
+\senh^3 x &= \frac{1}{4} \senh 3x - \frac{3}{4}\senh x\\\\
+\cosh^3 x &= \frac{3}{4}\cosh x+ \frac{1}{4} \cosh 3x
+\end{align*}
+\end{minipage}
+\begin{minipage}[c]{0.33\textwidth}
+\begin{align*}
+\senh^4 x &= \frac{3}{8}- \frac{1}{2} \cosh 2x + \frac{1}{8}\cosh 4x\\\\
+\cosh^4 x &= \frac{3}{8}+ \frac{1}{2} \cosh 2x + \frac{1}{8}\cosh 4x
+\end{align*}
+\end{minipage}
+
+\section*{Suma, diferencia y producto de las funciones}
+
+\begin{align*}
+&\senh x + \senh y = 2\senh\left( \frac{x+y}{2} \right)\cosh\left( \frac{x-b}{2}\right)\\
+&\senh x - \senh y = 2\cosh\left( \frac{x+y}{2} \right)\senh\left( \frac{x-y}{2}\right)\\
+&\cosh x + \cosh y = 2\cosh\left( \frac{x+y}{2} \right)\cosh\left( \frac{x-y}{2}\right)\\
+&\cosh x - \cosh y = 2\senh\left( \frac{x+y}{2} \right)\senh\left( \frac{x-y}{2}\right)\\
+&\senh x \senh y = \frac{1}{2}\left[ \cosh (x+y)-\cosh (x-y) \right]\\
+&\cosh x \cosh y = \frac{1}{2}\left[ \cosh (x+y)+\cosh (x-y) \right]\\
+&\senh x \cosh y = \frac{1}{2}\left[ \senh (x+y)+\senh (x-y) \right]
+\end{align*}
+
+\section*{Relaciones entre funciones hiperbólicas}
+
+\begin{table}[htb]
+\extrarowheight = -0.5ex
+\renewcommand{\arraystretch}{1.9}
+\centering
+\begin{tabular}{|c|c|c|c|c|c|c|}
+\hline
+Función & $\senh A = u$ & $\cosh A = u $ & $\tanh A = u$ & $\coth A = u$ & $\sech A = u$ & $\csch A = u$ \\ \hline
+$\senh A$ & $u$ & $\sqrt{u^2-1}$ & $\frac{u}{\sqrt{1-u^2}}$ & $\frac{1}{\sqrt{u^2-1}}$ & $\frac{\sqrt{1-u^2}}{u}$ & $\frac{1}{u}$ \\ \hline
+$\cosh A$ & $\sqrt{1+u^2}$ & $u$ & $\frac{1}{\sqrt{1-u^2}}$ & $\frac{u}{\sqrt{u^2-1}}$ & $\frac{1}{u}$ & $\frac{\sqrt{1+u^2}}{u}$\\ \hline
+$\tanh A$ & $\frac{u}{\sqrt{1+u^2}}$ & $\frac{\sqrt{u^2-}}{u}$ & $u$ & $\frac{1}{u}$ & $\sqrt{1-u^2}$ & $\frac{1}{\sqrt{1+u^2}}$\\ \hline
+$\coth A$ & $\frac{\sqrt{u^2+1}}{u}$ & $\frac{u}{\sqrt{u^2-1}}$ & $\frac{1}{u}$ & $u$ & $\frac{1}{\sqrt{1-u^2}}$ & $\sqrt{1+u^2}$\\ \hline
+$\sech A$ & $\frac{1}{\sqrt{1+u^2}}$ & $\frac{1}{u}$ & $\sqrt{1-u^2}$ & $\frac{\sqrt{u^2-1}}{u}$ & $u$ & $\frac{u}{\sqrt{1+u^2}}$\\ \hline
+$\csch A$ & $\frac{1}{u}$ & $\frac{1}{\sqrt{u^2-1}}$ & $\frac{\sqrt{1-u^2}}{u}$ & $\sqrt{u^2-1}$ & $\frac{u}{\sqrt{1-u^2}}$ & $u$\\ \hline
+\end{tabular}
+\end{table}
+
+\newpage
+
+\section*{Funciones hiperbólicas inversas}
+
+\begin{minipage}[c]{0.5\textwidth}
+\begin{align*}
+\senh^{-1} x &= \ln \left( x+ \sqrt{x^2-1} \right)\\
+\tanh^{-1} x &= \frac{1}{2}\ln \left( \frac{1+x}{1-x} \right)\\
+\sech^{-1} x &= \ln \left( \frac{1}{x}+ \sqrt{\frac{1}{x^2}-1} \right)
+\end{align*}
+\end{minipage}\begin{minipage}[c]{0.5\textwidth}
+\begin{align*}
+\cosh^{-1} x &= \ln \left( x+ \sqrt{x^2+1} \right)\\
+\coth^{-1} x &= \frac{1}{2}\ln \left( \frac{x+1}{x-1} \right)\\
+\csch^{-1} x &= \ln \left( \frac{1}{x}+ \sqrt{\frac{1}{x^2}+1} \right)
+\end{align*}
+\end{minipage}
+
+\section*{Relaciones entre hiperbólicas inversas}
+
+\begin{minipage}[t]{0.5\textwidth}
+\begin{align*}
+ \csch^{-1} x &= \senh^{-1} \left( \frac{1}{x} \right)\\[3pt]
+ \sech^{-1} x &= \cosh^{-1} \left( \frac{1}{x} \right)\\[3pt]
+ \coth^{-1} x &= \tanh^{-1} \left( \frac{1}{x} \right)\\[3pt]
+\end{align*}
+\end{minipage} 
+\begin{minipage}[t]{0.5\textwidth}
+\begin{align*}
+ \senh^{-1} (-x) &= -\senh^{-1} x\\[3pt]
+ \tanh^{-1} (-x) &= -\tanh^{-1} x\\[3pt]
+ \sech^{-1} (-x) &= -\sech^{-1} x\\[3pt]
+ \csch^{-1} (-x) &= -\csch^{-1} x
+\end{align*}
+\end{minipage}
+
+
+\section*{Relaciones entre funciones trigonométricas con hiperbólicas}
+
+\begin{minipage}[t]{0.3\textwidth}
+\begin{align*}
+& \sen (jx) = j\senh x\\[3pt]
+& \csc(jx) = -j\csch x\\[3pt]
+& \senh (jx) = j\sen x\\[3pt]
+& \csch(jx) = -j\csc x
+\end{align*}
+\end{minipage} 
+\begin{minipage}[t]{0.3\textwidth}
+\begin{align*}
+& \cos (jx) = \cosh x\\[3pt]
+& \sec(jx) = \sech x\\[3pt]
+& \cosh (jx) = \cos x\\[3pt]
+& \sech(jx) = \sec x
+\end{align*}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\begin{align*}
+& \tan (jx) = j\tan x\\[3pt]
+& \cot(jx) = -j\coth x\\[3pt]
+& \tanh (jx) = j\tan x\\[3pt]
+& \coth(jx) = -j\cot x
+\end{align*}
+\end{minipage}
+
+
+\section*{Periodicidad de funciones hiperbólicas}
+
+\begin{minipage}[t]{0.3\textwidth}
+\begin{align*}
+& \senh (x+2k\pi j) = \senh x\\[4pt]
+& \csch (x+2k\pi j) = \csch x
+\end{align*}
+\end{minipage} 
+\begin{minipage}[t]{0.3\textwidth}
+\begin{align*}
+& \cosh (x+2k\pi j) = \cosh x\\[4pt]
+& \sech (x+2k\pi j) = \sech x
+\end{align*}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\begin{align*}
+& \tanh (x+k\pi j) = \tanh x\\[4pt]
+& \coth (x+k\pi j) = \coth x
+\end{align*}
+\end{minipage}\\
+\begin{center}
+Con $k \in \mathbb{Z}$.
+\end{center}
+
+\newpage
+\section*{Relaciones entre hiperbólicas inversas y trigonométricas inversas}
+
+\begin{minipage}[t]{0.5\textwidth}
+\begin{align*}
+& \senh^{-1} (jx) = j\sen^{-1} x\\[3pt]
+& \cosh^{-1} x = \pm j \cos^{-1} x\\[3pt]
+& \tanh^{-1} (jx) = j \tan^{-1} x\\[3pt]
+ &\coth^{-1} (jx) = -j \cot^{-1} x\\[3pt]
+& \sech^{-1} x = \pm j \sec^{-1} x\\[3pt]
+& \csch^{-1} (jx) = -j \csc^{-1} x
+\end{align*}
+\end{minipage} 
+\begin{minipage}[t]{0.5\textwidth}
+\begin{align*}
+& \sen^{-1} (jx) = j\senh^{-1} x\\[3pt]
+& \cos^{-1} x = \pm j \cosh^{-1} x\\[3pt]
+& \tan^{-1} (jx) = j \tanh^{-1} x\\[3pt]
+& \cot^{-1} (jx) = -j \coth^{-1} x\\[3pt]
+& \sec^{-1} x = \pm j \sech^{-1} x\\[3pt]
+& \csc^{-1} (jx) = -j \csch^{-1} x
+\end{align*}
+\end{minipage}
+
+
